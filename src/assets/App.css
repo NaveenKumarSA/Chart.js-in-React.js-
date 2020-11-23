@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  align-items: center;
 }
 
 .App-logo {
@@ -35,4 +35,31 @@
   to {
     transform: rotate(360deg);
   }
+}
+.personDiv1 {
+  padding: 10px;
+  font-size: small;
+  background-color: crimson;
+  margin: 10px;
+}
+.personDiv2 {
+  padding: 10px;
+  font-size: small;
+  background-color: rgb(31, 178, 170);
+  margin: 10px;
+}
+.chartjs {
+  flex-direction: column;
+  width: 360px;
+  position: relative;
+  align-items: center;
+  background-color: rgba(247, 247, 247, 0.16);
+}
+.samlple {
+  background-color: rgba(191, 30, 145, 0.557);
+}
+.row{
+  display: flex;
+  flex-direction: column;
+  
 }
