@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { findRenderedComponentWithType } from "react-dom/test-utils";
-
+import "bootstrap/dist/css/bootstrap.min.css";
+import { Spinner, Col,Button } from "react-bootstrap";
 class UsersApi extends Component {
   constructor(props) {
     super(props);
@@ -39,10 +40,14 @@ class UsersApi extends Component {
                 this.state.lname}
             </h1>
             <h3>{this.state.person.gender}</h3>
+          
           </div>
         ) : (
           <div>
-            <h1>Loading... </h1>
+            <Col>
+              <Spinner animation="grow" variant="warning" />
+              
+            </Col>
           </div>
         )}
       </div>

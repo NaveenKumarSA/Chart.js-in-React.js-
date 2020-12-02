@@ -63,3 +63,15 @@
   flex-direction: column;
   
 }
+.active{
+  color:rgb(201, 78, 64);
+  
+  
+}
+.active:hover{
+  color:rgb(31, 26, 26);
+  text-decoration: none;
+  text-transform: capitalize;
+
+  
+}

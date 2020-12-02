@@ -1,44 +1,25 @@
 import logo from "./logo.svg";
 import "./assets/App.css";
 import FirstComponent from "./components/FirstComponent";
-import Navbar from "./components/Navbar";
+import NavBar from "./components/NavBar";
 import FirstFnComponent1 from "./components/FirstFnComponent";
 import Lorem1 from "./components/Lorem";
 import Parent from "./components/Parent";
 import UsersApi from "./components/UsersApi";
 import ClickCounter from "./components/ClickCounter";
 import PolarChart from "./components/PolarChart";
+import RenderProps from "./components/RenderProps";
+import BootstrapAnimations from "./components/BootstrapAnimations";
+import NavbarComponent from "./components/NavbarComponent";
+import RoutesComponent from "./components/RoutesComponent";
+
 function App() {
-  
-   var state = {
-       loading:false,
-       title:"",
-       fname:"",
-       lname:"",
-    }
-  
-  const persons = [
-    {
-      name: "Naveen",
-      age: "25",
-      city: "Kanchipuram",
-    },
-    {
-      name: "Daniel",
-      age: "27",
-      city: "Kanchipuram",
-    },
-    {
-      name: "chen",
-      age: "22",
-      city: "coimbatore",
-    },
-    {
-      name: "Siva",
-      age: "25",
-      city: "Thiripur",
-    },
-  ];
+  var state = {
+    loading: false,
+    title: "",
+    fname: "",
+    lname: "",
+  };
 
   const removePerson = () => {
     return alert("Button is Clicked");
@@ -46,8 +27,9 @@ function App() {
 
   return (
     <div className="App">
-      {/* <Navbar />
-      <Parent />
+      
+      <RoutesComponent/>
+      {/* <Parent />
       <FirstFnComponent1 date={Date()} />
       <removePerson />
       {persons.map((person) => {
@@ -66,9 +48,6 @@ function App() {
         );
       })}
       <Lorem1 title="Ipsum Lorem" /> */}
-      <div className="chartjs">
-        <PolarChart />
-      </div>
     </div>
   );
 }
