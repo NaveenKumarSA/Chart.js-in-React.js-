@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { findRenderedComponentWithType } from "react-dom/test-utils";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Spinner, Col,Button } from "react-bootstrap";
+import { Spinner, Col, Row, Button, ProgressBar } from "react-bootstrap";
 class UsersApi extends Component {
   constructor(props) {
     super(props);
@@ -15,7 +15,7 @@ class UsersApi extends Component {
     };
   }
   async componentDidMount() {
-    const url = "https://api.randomuser.me/?=5";
+    const url = "https://api.randomuser.me";
     const response = await fetch(url);
     const data = await response.json();
     this.setState({ person: data.results[0], loading: true });
@@ -40,14 +40,12 @@ class UsersApi extends Component {
                 this.state.lname}
             </h1>
             <h3>{this.state.person.gender}</h3>
-          
           </div>
         ) : (
-          <div>
-            <Col>
-              <Spinner animation="grow" variant="warning" />
-              
-            </Col>
+          <div style={{ marginTop: "250px", marginLeft:"250px"}}>
+            <Row>
+              <Spinner animation="border" variant="info"  />
+            </Row>
           </div>
         )}
       </div>

@@ -1,25 +1,19 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
+import Child from "./Child";
 
-class Parent extends Component {
-  constructor(props) {
-    super(props);
+function Parent() {
+  const [add, setAdd] = useState(0);
 
-    this.state = {
-      parentName: "SouriRaj",
-    };
-  }
+  const handleAdd = () => {
+    setAdd(add + 1);
+  };
 
-  
-  render() {
-     const greetParent = () => {
-        return alert(`Hello ${this.state.parentName} `);
-      };
-    return (
-      <div>
-        <button onClick={greetParent}> Click Me</button>
-      </div>
-    );
-  }
+  return (
+    <div>
+      <Child handleAddProp={handleAdd} />
+      <h1>{add}</h1>
+    </div>
+  );
 }
 
 export default Parent;

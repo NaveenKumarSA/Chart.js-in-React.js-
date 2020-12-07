@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Sansita+Swashed:wght@300&family=Ubuntu&display=swap");
 .App {
   align-items: center;
 }
@@ -58,20 +59,28 @@
 .samlple {
   background-color: rgba(191, 30, 145, 0.557);
 }
-.row{
+.row {
   display: flex;
   flex-direction: column;
-  
 }
-.active{
-  color:rgb(201, 78, 64);
-  
-  
+.active {
+  color: rgb(201, 78, 64);
 }
-.active:hover{
-  color:rgb(31, 26, 26);
+.active:hover {
+  color: rgb(31, 26, 26);
   text-decoration: none;
   text-transform: capitalize;
+}
 
-  
+.font1 {
+  letter-spacing: 5px;
+  font-family: "Open Sans Condensed", sans-serif;
+}
+.font2 {
+  letter-spacing: 5px;
+  font-family: "Sansita Swashed", cursive;
+}
+.font3 {
+  letter-spacing: 5px;
+  font-family: "Ubuntu", sans-serif;
 }

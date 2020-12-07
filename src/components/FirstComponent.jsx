@@ -6,30 +6,24 @@ class FirstComponent extends Component {
     super(props);
 
     this.state = {
-      name: props.name,
-      age: props.age,
-      city: props.city,
-      counter: props.counter
+      name: "props.name",
+      age: "props.age",
+      city: "props.city",
+      counter: "props.counter",
     };
-     
-     
   }
 
   render() {
-         /*  const increaseCount = () => {
-              this.setState ({
-                  counter: this.state.counter + 1
-              })
-              console.log(this.state.counter)
-          }; */
-     
+    const { counter, name, city, age } = this.state;
+
     return (
       <div
         className={this.state.counter % 2 === 0 ? "personDiv1" : "personDiv2"}
       >
-        <h1> {this.state.name}</h1>
-        <h3>  {this.state.age} </h3>
-        <h3> {this.state.city}</h3>
+        <h1> {name}</h1>
+        <h3> {age} </h3>
+        <h3> {city}</h3>
+        <h3> {counter}</h3>
       </div>
     );
   }

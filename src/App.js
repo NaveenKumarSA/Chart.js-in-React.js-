@@ -3,16 +3,19 @@ import "./assets/App.css";
 import FirstComponent from "./components/FirstComponent";
 import NavBar from "./components/NavBar";
 import FirstFnComponent1 from "./components/FirstFnComponent";
-import Lorem1 from "./components/Lorem";
-import Parent from "./components/Parent";
+import TimerWithLifeCycleComponents from "./components/TimerWithLifeCycleComponents";
 import UsersApi from "./components/UsersApi";
+
 import ClickCounter from "./components/ClickCounter";
 import PolarChart from "./components/PolarChart";
-import RenderProps from "./components/RenderProps";
+import GoogleFonts from "./components/GoogleFonts";
 import BootstrapAnimations from "./components/BootstrapAnimations";
 import NavbarComponent from "./components/NavbarComponent";
 import RoutesComponent from "./components/RoutesComponent";
-
+import AxiosApi from "./components/AxiosApi";
+import CountUpAnimations from "./components/CountUpAnimations";
+import SetIntervalAnimations from "./components/SetIntervalAnimations";
+import GoogleMaps from './components/GoogleMaps';
 function App() {
   var state = {
     loading: false,
@@ -27,27 +30,7 @@ function App() {
 
   return (
     <div className="App">
-      
-      <RoutesComponent/>
-      {/* <Parent />
-      <FirstFnComponent1 date={Date()} />
-      <removePerson />
-      {persons.map((person) => {
-        return (
-          <div>
-            <div>
-              <FirstComponent
-                name={person.name}
-                age={person.age}
-                city={person.city}
-                counter={3}
-              ></FirstComponent>
-              <button onClick={removePerson}> X </button>
-            </div>
-          </div>
-        );
-      })}
-      <Lorem1 title="Ipsum Lorem" /> */}
+      <GoogleMaps />
     </div>
   );
 }
