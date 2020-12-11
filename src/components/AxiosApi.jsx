@@ -18,6 +18,7 @@ class AxiosApi extends Component {
     axios
       .get("http://jsonplaceholder.typicode.com/posts")
       .then((response) => {
+        console.log(response)
         this.setState({
           posts: response.data,
           postsStatus: true,
@@ -49,19 +50,7 @@ class AxiosApi extends Component {
                 </td>
               </tr>
             </thead>
-            <tbody>
-              {this.state.posts.map((post) => (
-                <tr key={post.id}>
-                  <td>
-                    <p>{post.id}</p>
-                  </td>
-                  <td></td>
-                  <td>
-                    <p>{post.title}</p>
-                  </td>
-                </tr>
-              ))}
-            </tbody>
+            
           </table>
         )}
       </div>

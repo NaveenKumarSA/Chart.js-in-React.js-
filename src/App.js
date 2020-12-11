@@ -15,7 +15,7 @@ import RoutesComponent from "./components/RoutesComponent";
 import AxiosApi from "./components/AxiosApi";
 import CountUpAnimations from "./components/CountUpAnimations";
 import SetIntervalAnimations from "./components/SetIntervalAnimations";
-import GoogleMaps from './components/GoogleMaps';
+import GoogleMaps from "./components/GoogleMaps";
 function App() {
   var state = {
     loading: false,
@@ -30,7 +30,8 @@ function App() {
 
   return (
     <div className="App">
-      <GoogleMaps />
+      <GoogleMaps
+       />
     </div>
   );
 }

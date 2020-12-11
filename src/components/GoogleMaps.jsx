@@ -1,8 +1,8 @@
-import React, {Component} from 'react'
+import React, { Component } from "react";
 
 import { Map, InfoWindow, Marker, GoogleApiWrapper } from "google-maps-react";
 
-export class MapContainer extends Component {
+export class GoogleMaps extends Component {
   render() {
     return (
       <Map google={this.props.google} zoom={14}>
@@ -10,7 +10,7 @@ export class MapContainer extends Component {
 
         <InfoWindow onClose={this.onInfoWindowClose}>
           <div>
-            <h1>{this.state.selectedPlace.name}</h1>
+            <h1>Bengaluru</h1>
           </div>
         </InfoWindow>
       </Map>
@@ -19,5 +19,5 @@ export class MapContainer extends Component {
 }
 
 export default GoogleApiWrapper({
-  apiKey: "AIzaSyDtmy7SEOYIqEcrrTyVxhpSsDr7LnBcIKE",
-})(MapContainer);
+  apiKey: "AIzaSyAi4mpehsZP22RZbEJrmcROygQgyFkRA78",
+})(GoogleMaps);
