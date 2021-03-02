@@ -2,7 +2,7 @@ import logo from "./logo.svg";
 import "./assets/App.css";
 import FirstComponent from "./components/FirstComponent";
 import NavBar from "./components/NavBar";
-import FirstFnComponent1 from "./components/FirstFnComponent";
+import anything2, { FirstFnComponent } from "./components/FirstFnComponent";
 import TimerWithLifeCycleComponents from "./components/TimerWithLifeCycleComponents";
 import UsersApi from "./components/UsersApi";
 
@@ -30,8 +30,7 @@ function App() {
 
   return (
     <div className="App">
-      <GoogleMaps
-       />
+      <ClickCounter />
     </div>
   );
 }

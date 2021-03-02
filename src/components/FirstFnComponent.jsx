@@ -1,13 +1,28 @@
-import React from "react";
-const FirstFnComponent = (props) => {
+import React, { useState } from "react";
+export const FirstFnComponent = () => {
+  const [dateTime, setDateTime] = useState("")
+  var today = new Date();
+  new Date();
+
+  var date =
+    today.getFullYear() + "-" + (today.getMonth() + 1) + "-" + today.getDate();
+  
+   var time =
+    today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+ 
+  setInterval(() => {
+    setDateTime({dateTime : date + " " + time}) 
+  }, 1000);
+  
+    
   return (
     <div>
       <h1>HelloWorld! </h1>
       <h2>Today is {Date()}</h2>
-      {props.time}
-      <h3>- This is a functional component </h3>
+      <h3>{dateTime} </h3>
     </div>
   );
 };
 
-export default FirstFnComponent; 
+const anything = "hey";
+export default anything;
